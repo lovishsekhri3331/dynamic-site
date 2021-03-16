@@ -13,10 +13,7 @@ h1,h2,h3,h4,h5{
 
 .logo {
     background-color: #e9f6d0;
-    
-}
-.logoimg{
-    transform: scale(0.5)
+    width: 120px;
 }
 .featured_image{
     text-align:center;
@@ -189,9 +186,11 @@ h1,h2,h3,h4,h5{
 .splash {
     display: block;
 }
+.shopping-cart-img{
+    height: 80px;
+}
 
 .nav{
-    scale: 0.7;
     padding-top:19px;
     color: white;
     
