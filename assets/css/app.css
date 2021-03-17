@@ -246,7 +246,7 @@ h1,h2,h3,h4,h5{
 }
 
 /* Information */
-.tabinator {
+/* .tabinator {
     background: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: auto;
@@ -327,4 +327,20 @@ h1,h2,h3,h4,h5{
 #tab4:checked~#box4 {
     display: block;
     box-shadow: 0 0 15px #939393;
+} */
+
+
+
+.departments_list {
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+}
+
+.departments_list {
+    visibility: hidden;
+}
+
+.departments:hover .departments_list {
+    visibility: visible;
 }

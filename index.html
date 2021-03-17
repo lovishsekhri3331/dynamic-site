@@ -12,15 +12,65 @@
 
 <body>
 
+    <div class="reveal" id="loginAccountModal" data-reveal>
+        <h1>Login Account</h1>
+        <p>
+            <label for="login-account-email">Email:</label>
+            <input type="text" id="login-account-email" value="raymond.gubala@durhamcollege.ca" placeholder="Email">
+        </p>
+        <p>
+            <label for="login-account-password">Password:</label>
+            <input type="password" id="login-account-password" value="dingo" placeholder="Password">
+        </p>
+
+        <p>
+            <input type="button" id="login-account" value="Login">
+            <input type="button" class="close-login-button" data-close id="login-account-cancel" value="Cancel">
+        </p>
+
+    </div>
+
+
+
+    <div class="reveal" id="createAccountModal" data-reveal>
+        <h1>Create Account</h1>
+        <p>
+            <label for="create-account-email">Email:</label>
+            <input type="text" id="create-account-email" value="" placeholder="Email">
+        </p>
+        <p>
+            <label for="create-account-password">Password:</label>
+            <input type="password" id="create-account-password" value="" placeholder="Password">
+        </p>
+        <p>
+            <label for="create-account-name-first">First Name:</label>
+            <input type="text" id="create-account-name-first" value="" placeholder="First Name">
+        </p>
+        <p>
+            <label for="create-account-name-last">Last Name:</label>
+            <input type="text" id="create-account-name-last" value="" placeholder="Last Name">
+        </p>
+
+        <p>
+            <input type="button" id="create-account" value="Create Account">
+            <input type="button" class="close-button" data-close id="create-account-cancel" value="Cancel">
+        </p>
+
+    </div>
+
     <header class="header">
         <div class="grid-container">
             <div class="grid-x grid-padding-x">
-                <div class="cell large-5"><img src="./assets/img/logo.png" class="img-responsive logo"></div>
+                <div class="cell large-5"><a href="#/splash/"><img src="./assets/img/logo.png" class="img-responsive logo"></a></div>
                 <div class="cell large-5 search">
-                    <input type="search" class="categoryBar item" placeholder="Click Item">
+                    <span class="departments">Departments
+                        <div class="departments_list">
+                            <div class="getDepartment" data-id="">Canned Goods</div>
+                        </div>
+                    </span>
                     <input class="searchBar" type="search" placeholder="Search....."/>
                 </div>
-                <div class="cell large-2 nav"><img src="./assets/img/shopping-cart.png" class="img-responsive shopping-cart-img"></div>
+                <div class="cell large-2 nav"><a href="#/cart/"><img src="./assets/img/shopping-cart.png" class="img-responsive shopping-cart-img"></a></div>
             </div>
         </div>
     </header>
@@ -153,231 +203,20 @@
         </article>
 
 
+        <div class="product hideAll">
+            <article class="">PRODUCT PAGE
+                <div class="grid-x grid-padding-x product_cards"></div>
+            </article>
+        </div>
 
 
-
-
-
-
-        <article class="categoryItems hideAll">
-            <div class="grid-x grid-padding-x">
-                <div class="cell large-12 productHeading">
-                    <h2>Bakery</h2>
-                </div>
-            </div>
-            
-            <div class="grid-x grid-padding-x">
-                <div class="cell large-3">
-                    <div class="callout related_item item">
-                        <img src="./assets/img/b1.png" alt="">
-                        <strong>Bread Italian</strong>
-                        <p>Vitamin C fortified. Vitamin C antioxidant. Contains 10% juice. 100% natural flavor. No preservatives</p>
-                        <strong>$2.47/each</strong>
-                        <div class="changeQuantity">
-                            <div class="quantity">
-                                <button class="btn btn-add" id="btn-sub">
-                                    <img src="./assets/img/-.png" alt="">
-                                </button>
-                                <input type="text" class="btn-quantity" value=1 id="input-quantity">
-                                <button class="btn btn-sub" id="btn-add">
-                                    <img src="./assets/img/+.png" alt="">
-                                </button>
-                            </div>
-                            <div class="addButton">
-                                ADD
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell large-3">
-                    <div class="callout related_item item">
-                        <img src="./assets/img/b2.png" alt="">
-                        <strong>Hearty White</strong>
-                        <p>Vitamin C fortified. Vitamin C antioxidant. Contains 10% juice. 100% natural flavor. No preservatives</p>
-                        <strong>$2.47/each</strong>
-                        <div class="changeQuantity">
-                            <div class="quantity">
-                                <button class="btn btn-add" id="btn-sub">
-                                    <img src="./assets/img/-.png" alt="">
-                                </button>
-                                <input type="text" class="btn-quantity" value=1 id="input-quantity">
-                                <button class="btn btn-sub" id="btn-add">
-                                    <img src="./assets/img/+.png" alt="">
-                                </button>
-                            </div>
-                            <div class="addButton">
-                                ADD
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell large-3">
-                    <div class="callout related_item item">
-                        <img src="./assets/img/b3.png" alt="">
-                        <strong>Bread, Italian</strong>
-                        <p>Vitamin C fortified. Vitamin C antioxidant. Contains 10% juice. 100% natural flavor. No preservatives</p>
-                        <strong>$2.37/each</strong>
-                        <div class="changeQuantity">
-                            <div class="quantity">
-                                <button class="btn btn-add" id="btn-sub">
-                                    <img src="./assets/img/-.png" alt="">
-                                </button>
-                                <input type="text" class="btn-quantity" value=1 id="input-quantity">
-                                <button class="btn btn-sub" id="btn-add">
-                                    <img src="./assets/img/+.png" alt="">
-                                </button>
-                            </div>
-                            <div class="addButton">
-                                ADD
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell large-3">
-                    <div class="callout related_item item">
-                        <img src="./assets/img/b4.png" alt="">
-                        <strong>Bread, Sartwhite</strong>
-                        <p>Vitamin C fortified. Vitamin C antioxidant. Contains 10% juice. 100% natural flavor. No preservatives</p>
-                        <strong>$2.49/each</strong>
-                        <div class="changeQuantity">
-                            <div class="quantity">
-                                <button class="btn btn-add" id="btn-sub">
-                                    <img src="./assets/img/-.png" alt="">
-                                </button>
-                                <input type="text" class="btn-quantity" value=1 id="input-quantity">
-                                <button class="btn btn-sub" id="btn-add">
-                                    <img src="./assets/img/+.png" alt="">
-                                </button>
-                            </div>
-                            <div class="addButton">
-                                ADD
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell large-3">
-                    <div class="callout related_item item">
-                        <img src="./assets/img/b5.png" alt="">
-                        <strong>Cinnamon-Raisin</strong>
-                        <p>Vitamin C fortified. Vitamin C antioxidant. Contains 10% juice. 100% natural flavor. No preservatives</p>
-                        <strong>$6.97/each</strong>
-                        <div class="changeQuantity">
-                            <div class="quantity">
-                                <button class="btn btn-add" id="btn-sub">
-                                    <img src="./assets/img/-.png" alt="">
-                                </button>
-                                <input type="text" class="btn-quantity" value=1 id="input-quantity">
-                                <button class="btn btn-sub" id="btn-add">
-                                    <img src="./assets/img/+.png" alt="">
-                                </button>
-                            </div>
-                            <div class="addButton">
-                                ADD
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell large-3">
-                    <div class="callout related_item item">
-                        <img src="./assets/img/b6.png" alt="">
-                        <strong>Focaccia</strong>
-                        <p>Vitamin C fortified. Vitamin C antioxidant. Contains 10% juice. 100% natural flavor. No preservatives</p>
-                        <strong>$5.99/each</strong>
-                        <div class="changeQuantity">
-                            <div class="quantity">
-                                <button class="btn btn-add" id="btn-sub">
-                                    <img src="./assets/img/-.png" alt="">
-                                </button>
-                                <input type="text" class="btn-quantity" value=1 id="input-quantity">
-                                <button class="btn btn-sub" id="btn-add">
-                                    <img src="./assets/img/+.png" alt="">
-                                </button>
-                            </div>
-                            <div class="addButton">
-                                ADD
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell large-3">
-                    <div class="callout related_item item">
-                        <img src="./assets/img/b7.png" alt="">
-                        <strong>Bagel</strong>
-                        <p>Vitamin C fortified. Vitamin C antioxidant. Contains 10% juice. 100% natural flavor. No preservatives</p>
-                        <strong>$5.59/each</strong>
-                        <div class="changeQuantity">
-                            <div class="quantity">
-                                <button class="btn btn-add" id="btn-sub">
-                                    <img src="./assets/img/-.png" alt="">
-                                </button>
-                                <input type="text" class="btn-quantity" value=1 id="input-quantity">
-                                <button class="btn btn-sub" id="btn-add">
-                                    <img src="./assets/img/+.png" alt="">
-                                </button>
-                            </div>
-                            <div class="addButton">
-                                ADD
-                            </div>
-                        </div></div>
-                </div>
-                <div class="cell large-3">
-                    <div class="callout related_item item">
-                        <img src="./assets/img/b8.png" alt="">
-                        <strong>Tortilla</strong>
-                        <p>Vitamin C fortified. Vitamin C antioxidant. Contains 10% juice. 100% natural flavor. No preservatives</p>
-                        <strong>$3.39/each</strong>
-                        <div class="changeQuantity">
-                            <div class="quantity">
-                                <button class="btn btn-add" id="btn-sub">
-                                    <img src="./assets/img/-.png" alt="">
-                                </button>
-                                <input type="text" class="btn-quantity" value=1 id="input-quantity">
-                                <button class="btn btn-sub" id="btn-add">
-                                    <img src="./assets/img/+.png" alt="">
-                                </button>
-                            </div>
-                            <div class="addButton">
-                                ADD
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        
-
-
-        </article>
-
-
-        <article class="shoppingCart hideAll">
+        <article class="shoppingCart cart grid-container hideAll">
             <div class="grid-x grid-padding-x">
                 <div class="cell large-12 ShoppingCart-H3">
                     <h3>Cart Items</h3>
                 </div>
-                <div class="cell large-12 ">
-                    <div class="callout cart">
-                        <table>
-                            <tbody>
-                                <th>Items 1</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
-                            </tbody>
-                            <tr>
-                                <td>Bread Italian</td>
-                                <td>1</td>
-                                <td>$2.47</td>
-                            </tr>
-                            <tr>
-                                <td>Tortilla</td>
-                                <td>1</td>
-                                <td>$3.39</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                <div class="infoButton cell pull-4 large-12">
-                    <button class="InformationButtton">Information</button>
+                <div class="cart-container">
+
                 </div>
                 
             </div>
@@ -386,9 +225,12 @@
         </article>
 
 
-        <article class="information hideAll">
+        <article class="grid-container checkOut hideAll">
+            <div class="checkout-container">
+                <input type="button" class="button success" data-open="loginAccountModal" id="login" value="Login">
+                <input type="button" class="button success" data-open="createAccountModal" id="createAccount" value="Create Account">
             <div class="grid-x gridpadding-x">
-                <div class="tabinator">
+                <!-- <div class="tabinator">
                     <h2>Information</h2>
                         <input type="radio" id="tab1" name="tabs" class="tabs" checked>
                         <label for="tab1">Sign IN </label>
@@ -430,19 +272,40 @@
                             <button class="paymentButton">CheckOut</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 
+                <div class="cell large-6">
+                    <h3>Billing Address</h3>
+                    <p>
+                        <label for="billing-name_last">Last Name:</label>
+                        <input type="text" id="billing-name_last" value="" placeholder="Last Name">
+                    </p>
+                    <p>
+                        <label for="billing-address">Address:</label>
+                        <input type="text" id="billing-address" value="" placeholder="Address">
+                    </p>
+                </div>
+
+                <div class="cell large-6">
+                    <h3>Shipping Address</h3>
+                    <p>
+                        <label for="shipping-name_last">Last Name:</label>
+                        <input type="text" id="shipping-name_last" value="" placeholder="Last Name">
+                    </p>
+                    <p>
+                        <label for="shipping-address">Address:</label>
+                        <input type="text" id="shipping-address" value="" placeholder="Address">
+                    </p>
+                </div>
+
+                <div class="cell large-3 large-offset-9">
+                    <input type="button" class="button small success" id="continue-payment" value="Payment">
+                    <input type="button" class="button small success" id="return-cart" value="Return Cart">
+                </div>
+
             </div>
         </article>
 
-        <article class="checkout hideAll">
-            <div class="grid-x gridpadding-x">
-                <div class="cell large-12 related_information" style="text-align: center;">
-                    Thankyou,Your order is being processed
-                </div>
-                
-            </div>
-        </article>
         
         
 
